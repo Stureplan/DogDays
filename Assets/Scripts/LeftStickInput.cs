@@ -20,6 +20,7 @@ public class LeftStickInput : MonoBehaviour {
 
         //moveDirection = transform.TransformDirection(moveDirection);
         rb.AddForce(moveDirection,ForceMode.Force);
+        rb.AddForce(moveDirection * Time.deltaTime,ForceMode.Force);
 
         moveDirection = Vector3.zero;
        // transform.Translate(transform.position + moveDirection);

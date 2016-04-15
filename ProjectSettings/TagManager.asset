@@ -4,6 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags: []
+  tags:
+  - Arm2
+  - Food
+  - Bag
   layers:
   - Default
   - TransparentFX
@@ -15,6 +19,8 @@ TagManager:
   - 
   - 
   - 
+  - Arm2
+  - Food
   - 
   - 
   - 
