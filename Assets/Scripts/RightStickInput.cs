@@ -13,10 +13,8 @@ public class RightStickInput : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0.0f,0.0f);
+        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
         Debug.Log(movement);
-        // rb.AddForce(movement, ForceMode.Impulse);
-     //   rb.velocity.Set(movement.x, movement.y, movement.z);
-        rb.velocity = new Vector3(movement.x, movement.y,movement.z);
+        rb.velocity = new Vector3(movement.x, movement.y, movement.z);
 	}
 }
