@@ -19,7 +19,6 @@ public class LeftStickInput : MonoBehaviour {
         moveDirection =new Vector3( Input.GetAxis("Horizontal") * moveSpeed,0, Input.GetAxis("Vertical") * moveSpeed);
 
         //moveDirection = transform.TransformDirection(moveDirection);
-        rb.AddForce(moveDirection,ForceMode.Force);
         rb.AddForce(moveDirection * Time.deltaTime,ForceMode.Force);
 
         moveDirection = Vector3.zero;
