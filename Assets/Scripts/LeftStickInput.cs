@@ -16,10 +16,10 @@ public class LeftStickInput : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        moveDirection =new Vector3( Input.GetAxis("Horizontal") * moveSpeed,0, Input.GetAxis("Vertical") * moveSpeed);
+        moveDirection =new Vector3(Input.GetAxis("Horizontal") * moveSpeed,0, Input.GetAxis("Vertical") * moveSpeed);
 
         //moveDirection = transform.TransformDirection(moveDirection);
-        rb.AddForce(moveDirection * Time.deltaTime,ForceMode.Force);
+        rb.velocity = (moveDirection * Time.deltaTime);
 
         moveDirection = Vector3.zero;
        // transform.Translate(transform.position + moveDirection);
