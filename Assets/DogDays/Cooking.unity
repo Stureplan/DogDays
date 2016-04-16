@@ -166,7 +166,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 160425963}
   m_LocalRotation: {x: 0.30070582, y: 0, z: 0, w: 0.95371693}
-  m_LocalPosition: {x: 0, y: 5.5, z: -2.75}
+  m_LocalPosition: {x: 0, y: 6.2, z: -3.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -576,19 +576,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.8415064
+      value: 0.7900124
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.09150631
+      value: 0.09949117
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5245191
+      value: 0.5992776
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.5292206
+      value: -4.5288877
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -596,11 +596,35 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.58722305
+      value: -0.58612823
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.091506295
+      value: 0.082754456
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6400002, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
@@ -803,7 +827,7 @@ HingeJoint:
   m_Anchor: {x: 6.7, y: 5.94, z: 23.4}
   m_Axis: {x: 1, y: 0, z: -0.65}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.92527115, y: -1.2786462, z: 1.925071}
+  m_ConnectedAnchor: {x: -0.92565626, y: -1.6089406, z: 1.6601858}
   m_UseSpring: 1
   m_Spring:
     spring: 25
@@ -816,8 +840,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -20
-    max: 20
+    min: -10
+    max: 10
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -1214,8 +1238,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 21.52594, y: 3.0752485, z: 9.799073}
-  m_Center: {x: 0.00063705444, y: 17.637838, z: 6.992385}
+  m_Size: {x: 21.52594, y: 3.075249, z: 3.5995994}
+  m_Center: {x: 0.0012384141, y: 17.639587, z: 10.091824}
 --- !u!65 &1637645420
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1262,8 +1286,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.403526, y: 30.894287, z: 26.184189}
-  m_Center: {x: -10.918346, y: 0.5906429, z: 1.2585945}
+  m_Size: {x: 4.4035277, y: 30.894285, z: 23.642656}
+  m_Center: {x: -10.917974, y: 0.59232116, z: -0.012580261}
 --- !u!65 &1637645424
 BoxCollider:
   m_ObjectHideFlags: 0
