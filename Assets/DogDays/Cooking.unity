@@ -232,6 +232,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 90999560}
+--- !u!1 &118871071 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 6dc9744c006f2d1459df264aae109df8, type: 3}
+  m_PrefabInternal: {fileID: 124154209}
+--- !u!65 &118871075
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 118871071}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8, y: 210, z: 8}
+  m_Center: {x: 0, y: 5, z: 0}
 --- !u!1 &122756021
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,7 +685,7 @@ GameObject:
   - 65: {fileID: 314116386}
   - 65: {fileID: 314116387}
   - 65: {fileID: 314116388}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: DogeColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,7 +714,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 5, z: 1}
+  m_Size: {x: 1, y: 10, z: 1}
   m_Center: {x: -3.5, y: 1.5, z: 2.35}
 --- !u!65 &314116387
 BoxCollider:
@@ -710,7 +726,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 5, z: 1}
+  m_Size: {x: 1, y: 10, z: 1}
   m_Center: {x: 3.5, y: 1.5, z: 2.35}
 --- !u!65 &314116388
 BoxCollider:
@@ -723,7 +739,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 6, y: 1, z: 1}
-  m_Center: {x: 0, y: 3.5, z: 2.35}
+  m_Center: {x: 0, y: 6, z: 2.35}
 --- !u!1 &348837234 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
