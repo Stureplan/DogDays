@@ -50,7 +50,5 @@ public class RightStickInput : MonoBehaviour
         {
             hand.transform.localRotation = Quaternion.Lerp(hand.transform.localRotation, Quaternion.Euler(60, -180, -180), Time.deltaTime * shakeSpeed);
         }
-
-        Debug.Log(hand.transform.localRotation);
     }
 }

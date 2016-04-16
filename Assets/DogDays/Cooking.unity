@@ -2821,6 +2821,7 @@ GameObject:
   - 33: {fileID: 403177431}
   - 64: {fileID: 403177430}
   - 23: {fileID: 403177429}
+  - 114: {fileID: 403177433}
   m_Layer: 0
   m_Name: Quad (3)
   m_TagString: Untagged
@@ -2885,6 +2886,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1213852035}
   m_RootOrder: 3
+--- !u!114 &403177433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 403177428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f771d0fd9bd4f42ab200ead4605a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &407580644
 GameObject:
   m_ObjectHideFlags: 0
@@ -4448,7 +4460,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.70710665
+      value: -0.7761552
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
       propertyPath: m_LocalRotation.z
@@ -4456,7 +4468,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.70710695
+      value: 0.630542
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
       propertyPath: m_RootOrder
@@ -5285,6 +5297,7 @@ GameObject:
   - 33: {fileID: 801375403}
   - 64: {fileID: 801375402}
   - 23: {fileID: 801375401}
+  - 114: {fileID: 801375405}
   m_Layer: 0
   m_Name: Quad (2)
   m_TagString: Untagged
@@ -5349,6 +5362,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1213852035}
   m_RootOrder: 2
+--- !u!114 &801375405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801375400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f771d0fd9bd4f42ab200ead4605a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &811371911
 GameObject:
   m_ObjectHideFlags: 0
@@ -7677,6 +7701,7 @@ GameObject:
   - 33: {fileID: 1158538400}
   - 64: {fileID: 1158538399}
   - 23: {fileID: 1158538398}
+  - 114: {fileID: 1158538402}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -7741,6 +7766,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1213852035}
   m_RootOrder: 0
+--- !u!114 &1158538402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1158538397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f771d0fd9bd4f42ab200ead4605a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1165859450
 GameObject:
   m_ObjectHideFlags: 0
@@ -9060,6 +9096,7 @@ GameObject:
   - 33: {fileID: 1405861632}
   - 64: {fileID: 1405861631}
   - 23: {fileID: 1405861630}
+  - 114: {fileID: 1405861634}
   m_Layer: 0
   m_Name: Quad (1)
   m_TagString: Untagged
@@ -9124,6 +9161,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1213852035}
   m_RootOrder: 1
+--- !u!114 &1405861634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1405861629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f771d0fd9bd4f42ab200ead4605a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1407226789
 GameObject:
   m_ObjectHideFlags: 0
