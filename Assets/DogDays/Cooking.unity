@@ -384,6 +384,38 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!59 &348837237
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 348837234}
+  m_ConnectedBody: {fileID: 1919077584}
+  m_Anchor: {x: 11.96, y: 8, z: 12.2}
+  m_Axis: {x: -1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -0.02949281, y: 0.37200737, z: 0.51167125}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: 0
+    max: 90
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
 --- !u!1 &381782704
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,15 +775,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.900824
+      value: 12.28
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 21.80135
+      value: 16.65
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.4009733
+      value: 3.39
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ca33661babaf0a143bca3f5c09acf0e6, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1511,7 +1543,6 @@ GameObject:
   - 65: {fileID: 1637645422}
   - 65: {fileID: 1637645421}
   - 65: {fileID: 1637645420}
-  - 65: {fileID: 1637645419}
   m_Layer: 8
   m_Name: Collision
   m_TagString: Untagged
@@ -1531,18 +1562,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 890836863}
   m_RootOrder: 0
---- !u!65 &1637645419
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1637645417}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 21.52594, y: 3.0752487, z: 4.9772487}
-  m_Center: {x: 0.0019190228, y: 17.640251, z: 9.400436}
 --- !u!65 &1637645420
 BoxCollider:
   m_ObjectHideFlags: 0
