@@ -15,7 +15,18 @@ public class DogeInput : MonoBehaviour
 	
 	void Update ()
     {
-        LerpTowards(def);
+        float hSpeed = Input.GetAxis("HorizontalRight2");
+        float vSpeed = Input.GetAxis("VerticalRight2");
+
+        if (hSpeed < 0.2f && hSpeed > -0.2f)
+        {
+            if (vSpeed < 0.2f && vSpeed > -0.2f)
+            {
+                LerpTowards(def);
+
+            }
+
+        }
 
     }
 

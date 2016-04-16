@@ -37,13 +37,13 @@ public class PyttInPanUI : MonoBehaviour {
 
         pan = gamePan.GetComponent<Pan>();
 
-        origString = "Pytt in Pan : ";
+        origString = "PYTT IN PAN: ";
 
         choice = Choice.Play;
 
         timeDown = 10;
 
-        winner.text = "Human Win";
+        winner.text = "HUMAN WINS";
 
         //winShow.SetActive(false);
 	}
@@ -84,7 +84,7 @@ public class PyttInPanUI : MonoBehaviour {
         {
             timeDown = 0;
             winShow.SetActive(true);
-            winner.text = "DOG Win";
+            winner.text = "DOG WINS";
             //winShow.
             gameOver = true;
         }
