@@ -13,6 +13,9 @@ public class PyttInPanUI : MonoBehaviour {
     public Text text;
 
     string origString;
+
+    public GameObject winShow;
+
 	void Start ()
     {
         gamePan = GameObject.Find("pan_Left");
@@ -20,6 +23,8 @@ public class PyttInPanUI : MonoBehaviour {
         pan = gamePan.GetComponent<Pan>();
 
         origString = "Pytt in Pan : ";
+
+        //winShow.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -29,7 +34,7 @@ public class PyttInPanUI : MonoBehaviour {
 
         if(pan.GetNrOfFoods() > 50)
         {
-
+            winShow.SetActive(true);
         }
 	}
 }
