@@ -17,7 +17,7 @@ public class RightStickInput : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         hand = GameObject.Find("BoxG_Right");
         box = GameObject.Find("box_Right");
-        rbBox = box.transform.parent.gameObject.GetComponent<Rigidbody>();
+        rbBox = hand.GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
