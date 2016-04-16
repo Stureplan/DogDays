@@ -5,6 +5,7 @@ public class RightStickInput : MonoBehaviour
 {
     public GameObject food;
     GameObject hand;
+    GameObject box;
     Rigidbody rb;
     float speed = 3.0f;
     float shakeSpeed = 10.0f;
@@ -14,6 +15,7 @@ public class RightStickInput : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         hand = GameObject.Find("BoxG_Right");
+        box = GameObject.Find("box_Right");
 	}
 	
 	// Update is called once per frame
@@ -31,9 +33,9 @@ public class RightStickInput : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Joystick1Button5))
         {
             //TODO: Create GetKeyDown and spawn 5 each time its pressed
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 15; i++)
             {
-                Instantiate(food,transform.position, Quaternion.identity);
+                Instantiate(food, box.transform.position, Quaternion.identity);
 
             }
         }
