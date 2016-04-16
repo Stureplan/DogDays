@@ -20,9 +20,8 @@ public class LeftStickInput : MonoBehaviour {
         moveDirection =new Vector3(Input.GetAxis("HorizontalLeft") * moveSpeed,0.0f, Input.GetAxis("VerticalLeft") * moveSpeed);
 
         //moveDirection = transform.TransformDirection(moveDirection);
-        //rb.velocity = (moveDirection * Time.deltaTime);
+        rb.velocity = (moveDirection * Time.deltaTime);
 
         moveDirection = Vector3.zero;
-       // transform.Translate(transform.position + moveDirection);
     }
 }

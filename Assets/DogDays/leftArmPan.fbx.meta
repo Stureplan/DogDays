@@ -39,7 +39,7 @@ ModelImporter:
     4300006: panHandle_Left
     4300008: pan_Left
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
