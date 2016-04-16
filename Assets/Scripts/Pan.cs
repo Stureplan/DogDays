@@ -21,7 +21,8 @@ public class Pan : MonoBehaviour {
     {
         if (col.gameObject.tag == "Food")
         {
-            //Debug.Log("HA");
+            nrOfFoodCol++;
+
         }
     }
 }
