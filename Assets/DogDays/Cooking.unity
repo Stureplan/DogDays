@@ -1958,9 +1958,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e94ea4cb1f1754fa3eee6b169a593d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterOfPytt: {fileID: 0}
-  timeCount: {fileID: 0}
-  winner: {fileID: 0}
   counterOfPytt: {fileID: 381782707}
   timeCount: {fileID: 454873797}
   winner: {fileID: 1517524707}
