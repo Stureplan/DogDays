@@ -20,13 +20,13 @@ public class PyttInPanUI : MonoBehaviour {
     public Text startCountDownText;
     int startCountDown;
 
-    float timeDown;
+    float timeDown = 30;
 
     string origString;
 
     public GameObject winShow;
 
-    int foodAmountWin = 30;
+    int foodAmountWin = 50;
 
     Choice choice;
 
@@ -42,8 +42,6 @@ public class PyttInPanUI : MonoBehaviour {
         origString = "PYTT IN PAN: ";
 
         choice = Choice.Play;
-
-        timeDown = 10;
 
         winner.text = "HUMAN WINS";
 

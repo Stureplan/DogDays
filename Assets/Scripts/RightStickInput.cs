@@ -36,7 +36,7 @@ public class RightStickInput : MonoBehaviour
             LerpTowards();
 
             //TODO: Create GetKeyDown and spawn 5 each time its pressed
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 5; i++)
             {
                 Instantiate(food, box.transform.position, Quaternion.identity);
 
