@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+using UnityEngine.SceneManagement;
+
 public enum Choice
 {
     Play,
@@ -35,13 +37,16 @@ public class Arrow : MonoBehaviour {
         if(choice == Choice.Play)
         {
             transform.position = new Vector3(transform.position.x,playBtn.transform.position.y,transform.position.z);
-            if(Input.GetKeyDown(KeyCode.Joystick1Button0))
-                Application.LoadLevel("Cooking");
+            if (Input.GetKeyDown(KeyCode.Joystick1Button0))
+                SceneManager.LoadScene("Cooking");
         }
         else if(choice == Choice.End)
         {
             transform.position = new Vector3(transform.position.x, endBtn.transform.position.y, transform.position.z);
-            Debug.Log("Megumbe");
+            if (Input.GetKeyDown(KeyCode.Joystick1Button0))
+                Application.Quit();
+
+           
         }
 	
 	}
