@@ -26,5 +26,10 @@ public class PyttInPanUI : MonoBehaviour {
 	void Update () 
     {
         text.text = origString + pan.GetNrOfFoods().ToString();
+
+        if(pan.GetNrOfFoods() > 50)
+        {
+
+        }
 	}
 }
