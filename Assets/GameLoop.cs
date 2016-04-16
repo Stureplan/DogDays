@@ -38,7 +38,7 @@ public class GameLoop : MonoBehaviour {
 
         if (choice == Choice.Play)
         {
-            arrow.transform.position = new Vector3(playBtn.transform.position.x, transform.position.y, transform.position.z);
+            arrow.transform.position = new Vector3(playBtn.transform.position.x, arrow.transform.position.y, arrow.transform.position.z);
             if (Input.GetKeyDown(KeyCode.Joystick1Button0))
                 SceneManager.LoadScene("Cooking");
 
@@ -46,7 +46,7 @@ public class GameLoop : MonoBehaviour {
         }
         else if (choice == Choice.End)
         {
-            arrow.transform.position = new Vector3(endBtn.transform.position.x, transform.position.y, transform.position.z);
+            arrow.transform.position = new Vector3(endBtn.transform.position.x, arrow.transform.position.y, arrow.transform.position.z);
             if (Input.GetKeyDown(KeyCode.Joystick1Button0))
                 Application.Quit();
         }

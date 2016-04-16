@@ -20,6 +20,7 @@ public class PyttInPanUI : MonoBehaviour {
 
 	void Start ()
     {
+        winShow.SetActive(false);
         gamePan = GameObject.Find("pan_Left");
 
         pan = gamePan.GetComponent<Pan>();
