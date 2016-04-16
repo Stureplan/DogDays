@@ -16,6 +16,8 @@ public class PyttInPanUI : MonoBehaviour {
 
     public GameObject winShow;
 
+    Choice choice;
+
 	void Start ()
     {
         gamePan = GameObject.Find("pan_Left");
@@ -23,6 +25,8 @@ public class PyttInPanUI : MonoBehaviour {
         pan = gamePan.GetComponent<Pan>();
 
         origString = "Pytt in Pan : ";
+
+        choice = Choice.Play;
 
         //winShow.SetActive(false);
 	}
@@ -32,7 +36,7 @@ public class PyttInPanUI : MonoBehaviour {
     {
         text.text = origString + pan.GetNrOfFoods().ToString();
 
-        if(pan.GetNrOfFoods() > 50)
+        if(pan.GetNrOfFoods() > 10)
         {
             winShow.SetActive(true);
         }

@@ -49,8 +49,6 @@ public class Arrow : MonoBehaviour {
             transform.position = new Vector3(transform.position.x, endBtn.transform.position.y, transform.position.z);
             if (Input.GetKeyDown(KeyCode.Joystick1Button0))
                 Application.Quit();
-
-           
         }
 	
 	}

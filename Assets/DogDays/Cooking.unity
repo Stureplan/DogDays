@@ -1143,7 +1143,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e96dcc066d2bf842915b04db10b107f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winShow: {fileID: 0}
+  playBtn: {fileID: 1725878895}
+  endBtn: {fileID: 403889194}
+  arrow: {fileID: 90999560}
 --- !u!114 &1365096846
 MonoBehaviour:
   m_ObjectHideFlags: 0
