@@ -394,7 +394,7 @@ HingeJoint:
   m_Anchor: {x: 11.96, y: 8, z: 12.2}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.02949281, y: 0.37200737, z: 0.51167125}
+  m_ConnectedAnchor: {x: -0.02949281, y: 0.37200737, z: 0.4396059}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1252,7 +1252,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1336920219}
-  m_LocalRotation: {x: -0.16317593, y: -0.33682433, z: 0.059391227, w: -0.92541647}
+  m_LocalRotation: {x: 0.16317594, y: -0.33682412, z: 0.059391193, w: 0.9254165}
   m_LocalPosition: {x: 0, y: 15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1884,7 +1884,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e94ea4cb1f1754fa3eee6b169a593d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 381782707}
+  counterOfPytt: {fileID: 0}
+  timeCount: {fileID: 0}
+  winner: {fileID: 0}
   winShow: {fileID: 1365096844}
 --- !u!1001 &1859903870
 Prefab:
@@ -2024,7 +2026,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1919077579}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 13.78, z: 3.64}
+  m_LocalPosition: {x: -0, y: 13.78, z: 4.61}
   m_LocalScale: {x: 15.5, y: 1, z: 13.46}
   m_Children: []
   m_Father: {fileID: 890836863}
