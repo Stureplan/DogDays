@@ -14,7 +14,7 @@ public class Pan : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
-        
+
 	}
 
     void OnTriggerEnter(Collider col)
@@ -22,7 +22,21 @@ public class Pan : MonoBehaviour {
         if (col.gameObject.tag == "Food")
         {
             nrOfFoodCol++;
-
+            //Update UI
         }
+    }
+
+    void OnTriggerExit(Collider col)
+    {
+        if (col.gameObject.tag == "Food")
+        {
+            nrOfFoodCol--;
+            //Update UI
+        }
+    }
+
+    public int GetNrOfFoods()
+    {
+        return nrOfFoodCol;
     }
 }
