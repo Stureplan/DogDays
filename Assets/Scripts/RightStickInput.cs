@@ -7,6 +7,7 @@ public class RightStickInput : MonoBehaviour
     GameObject hand;
     GameObject box;
     Rigidbody rb;
+    Rigidbody rbBox;
     float speed = 3.0f;
     float shakeSpeed = 10.0f;
     float degrees = 30.0f;
@@ -16,6 +17,7 @@ public class RightStickInput : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         hand = GameObject.Find("BoxG_Right");
         box = GameObject.Find("box_Right");
+        rbBox = box.transform.parent.gameObject.GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
@@ -23,15 +25,16 @@ public class RightStickInput : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Joystick1Button5))
         {
-            LerpTowards(1);
         }
         else
         {
-            LerpTowards(0);
+           // LerpTowards(0);
         }
 
         if (Input.GetKeyDown(KeyCode.Joystick1Button5))
         {
+            LerpTowards();
+
             //TODO: Create GetKeyDown and spawn 5 each time its pressed
             for (int i = 0; i < 15; i++)
             {
@@ -52,15 +55,9 @@ public class RightStickInput : MonoBehaviour
     }
 
 
-    void LerpTowards(int mode)
+    void LerpTowards()
     {
-        if (mode == 1)
-        {
-            hand.transform.localRotation = Quaternion.Lerp(hand.transform.localRotation, Quaternion.Euler(degrees, -180, -180), Time.deltaTime * shakeSpeed);
-        }
-        else
-        {
-            hand.transform.localRotation = Quaternion.Lerp(hand.transform.localRotation, Quaternion.Euler(60, -180, -180), Time.deltaTime * shakeSpeed);
-        }
+        // hand.transform.localRotation = Quaternion.Lerp(hand.transform.localRotation, Quaternion.Euler(degrees, 70, 70), Time.deltaTime * shakeSpeed);
+        rbBox.AddForce(Vector3.up * 500.0f, ForceMode.Force);
     }
 }

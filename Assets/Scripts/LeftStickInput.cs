@@ -7,11 +7,24 @@ public class LeftStickInput : MonoBehaviour {
     float moveSpeed = 3.0f;
 
     Rigidbody rb;
+    Rigidbody rbHand;
+    GameObject hand;
+
 	// Use this for initialization
 	void Start () 
     {
         rb = GetComponent<Rigidbody>();
+        hand = GameObject.Find("handG_Left");
+        rbHand = hand.GetComponent<Rigidbody>();
 	}
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Joystick1Button4))
+        {
+            rbHand.AddForce(Vector3.up * 500.0f, ForceMode.Force);
+        }
+    }
 	
 	// Update is called once per frame
     void FixedUpdate()
