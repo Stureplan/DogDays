@@ -3,6 +3,8 @@ using System.Collections;
 
 using UnityEngine.SceneManagement;
 
+using UnityEngine.UI;
+
 public enum Choice
 {
     Play,
@@ -15,6 +17,8 @@ public class Arrow : MonoBehaviour {
 
     public GameObject playBtn;
     public GameObject endBtn;
+
+    public Text nrOfPyttInPan;
 
 	void Start () {
         choice = Choice.Play;
