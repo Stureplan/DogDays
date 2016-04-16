@@ -10,7 +10,14 @@ public class PyttInPanUI : MonoBehaviour {
     Pan pan;
     GameObject gamePan;
 
-    public Text text;
+    bool gameOver;
+
+    public Text counterOfPytt;
+    public Text timeCount;
+
+    public Text winner;
+
+    float timeDown;
 
     string origString;
 
@@ -20,6 +27,7 @@ public class PyttInPanUI : MonoBehaviour {
 
 	void Start ()
     {
+        gameOver = false;
         winShow.SetActive(false);
         gamePan = GameObject.Find("pan_Left");
 
@@ -29,17 +37,39 @@ public class PyttInPanUI : MonoBehaviour {
 
         choice = Choice.Play;
 
+        timeDown = 10;
+
+        winner.text = "Human Win";
+
         //winShow.SetActive(false);
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
-        text.text = origString + pan.GetNrOfFoods().ToString();
+        if (!gameOver)
+            timeDown -= Time.deltaTime;
 
-        if(pan.GetNrOfFoods() > 10)
+        int intTime = (int)timeDown;
+        timeCount.text = intTime.ToString();
+
+
+        counterOfPytt.text = origString + pan.GetNrOfFoods().ToString();
+
+        if (pan.GetNrOfFoods() > 10 && !gameOver)
         {
             winShow.SetActive(true);
+
+            gameOver = true;
+        }
+
+        else if (timeDown <= 0 && !gameOver)
+        {
+            timeDown = 0;
+            winShow.SetActive(true);
+            winner.text = "DOG Win";
+            //winShow.
+            gameOver = true;
         }
 	}
 }

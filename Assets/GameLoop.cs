@@ -30,8 +30,6 @@ public class GameLoop : MonoBehaviour {
         }
         else if (Input.GetAxis("HorizontalLeft") > 0.5f)
         {
-            
-
             choice = Choice.End;
             Debug.Log("End");
         }
