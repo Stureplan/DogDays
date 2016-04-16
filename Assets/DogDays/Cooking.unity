@@ -699,15 +699,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d0c9ce8ed9fa3da4480ef7233fc28a18, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d0c9ce8ed9fa3da4480ef7233fc28a18, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d0c9ce8ed9fa3da4480ef7233fc28a18, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d0c9ce8ed9fa3da4480ef7233fc28a18, type: 3}
       propertyPath: m_Name
@@ -1258,15 +1258,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d0c9ce8ed9fa3da4480ef7233fc28a18, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d0c9ce8ed9fa3da4480ef7233fc28a18, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d0c9ce8ed9fa3da4480ef7233fc28a18, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0c9ce8ed9fa3da4480ef7233fc28a18, type: 3}
