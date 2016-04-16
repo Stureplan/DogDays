@@ -22,7 +22,7 @@ public class RightStickInput : MonoBehaviour
         Vector3 movement = new Vector3(Input.GetAxis("HorizontalRight"), 0.0f, Input.GetAxis("VerticalRight"));
         movement *= speed;
 
-        Debug.Log(movement);
+        //Debug.Log(movement);
         rb.velocity = new Vector3(movement.x, movement.y, movement.z);
 
         movement = Vector3.zero;
