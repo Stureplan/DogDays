@@ -26,6 +26,8 @@ public class PyttInPanUI : MonoBehaviour {
 
     public GameObject winShow;
 
+    int foodAmountWin = 30;
+
     Choice choice;
 
 	void Start ()
@@ -71,9 +73,9 @@ public class PyttInPanUI : MonoBehaviour {
             startCountDownText.text = "";
         }
 
-        counterOfPytt.text = origString + pan.GetNrOfFoods().ToString();
+        counterOfPytt.text = origString + pan.GetNrOfFoods().ToString() + " / " + foodAmountWin.ToString();
 
-        if (pan.GetNrOfFoods() > 10 && !gameOver)
+        if (pan.GetNrOfFoods() > foodAmountWin && !gameOver)
         {
             winShow.SetActive(true);
 
