@@ -21,11 +21,8 @@ public class Pan : MonoBehaviour {
     {
         if (col.gameObject.tag == "Food")
         {
-<<<<<<< HEAD
             nrOfFoodCol++;
-=======
-            //Debug.Log("HA");
->>>>>>> origin/master
+
         }
     }
 }
