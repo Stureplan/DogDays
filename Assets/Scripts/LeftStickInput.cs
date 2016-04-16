@@ -4,7 +4,7 @@ using System.Collections;
 public class LeftStickInput : MonoBehaviour {
 
     private Vector3 moveDirection = Vector3.zero;
-    public float moveSpeed;
+    float moveSpeed = 3.0f;
 
     Rigidbody rb;
 	// Use this for initialization
@@ -16,11 +16,9 @@ public class LeftStickInput : MonoBehaviour {
 	// Update is called once per frame
     void FixedUpdate()
     {
-
-        moveDirection =new Vector3(Input.GetAxis("HorizontalLeft") * moveSpeed,0.0f, Input.GetAxis("VerticalLeft") * moveSpeed);
-
-        //moveDirection = transform.TransformDirection(moveDirection);
-        rb.velocity = (moveDirection * Time.deltaTime);
+        moveDirection =new Vector3(Input.GetAxis("HorizontalLeft"),0.0f, Input.GetAxis("VerticalLeft"));
+        
+        rb.velocity = moveDirection * moveSpeed;
 
         moveDirection = Vector3.zero;
     }

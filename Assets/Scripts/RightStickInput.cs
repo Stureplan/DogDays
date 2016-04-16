@@ -3,9 +3,10 @@ using System.Collections;
 
 public class RightStickInput : MonoBehaviour
 {
+    public GameObject food;
     GameObject hand;
     Rigidbody rb;
-    float speed = 5.0f;
+    float speed = 3.0f;
     float shakeSpeed = 10.0f;
     float degrees = 30.0f;
 
@@ -26,7 +27,17 @@ public class RightStickInput : MonoBehaviour
         {
             LerpTowards(0);
         }
-	}
+
+        if (Input.GetKeyDown(KeyCode.Joystick1Button5))
+        {
+            //TODO: Create GetKeyDown and spawn 5 each time its pressed
+            for (int i = 0; i < 5; i++)
+            {
+                Instantiate(food,transform.position, Quaternion.identity);
+
+            }
+        }
+    }
 
     void FixedUpdate()
     {
