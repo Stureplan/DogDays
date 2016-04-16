@@ -18,7 +18,7 @@ public class DogeInput : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector3 movement = new Vector3(Input.GetAxis("HorizontalRight2"), 0.0f, Input.GetAxis("VerticalRight2"));
+        Vector3 movement = new Vector3(Input.GetAxis("HorizontalRight2"), Input.GetAxis("VerticalRight2"), 0.0f);
         movement *= speed;
         rb.velocity = new Vector3(movement.x, movement.y, movement.z);
 
