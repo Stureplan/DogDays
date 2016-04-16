@@ -166,7 +166,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 6dc9744c006f2d1459df264aae109df8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.78
+      value: 0.11
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 6dc9744c006f2d1459df264aae109df8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -203,6 +203,18 @@ Prefab:
     - target: {fileID: 400002, guid: 6dc9744c006f2d1459df264aae109df8, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 6dc9744c006f2d1459df264aae109df8, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6dc9744c006f2d1459df264aae109df8, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 6dc9744c006f2d1459df264aae109df8, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6dc9744c006f2d1459df264aae109df8, type: 3}
@@ -1268,7 +1280,7 @@ GameObject:
   - 4: {fileID: 987150934}
   - 65: {fileID: 987150935}
   - 114: {fileID: 987150936}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2361,7 +2373,7 @@ GameObject:
   - 4: {fileID: 1958359001}
   - 65: {fileID: 1958359002}
   - 114: {fileID: 1958359003}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: FoodKiller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
