@@ -10,6 +10,9 @@ public class PyttInPanUI : MonoBehaviour {
     Pan pan;
     GameObject gamePan;
 
+    public GameObject humanWin;
+    public GameObject dogWin;
+
     bool gameOver;
 
     public Text counterOfPytt;
@@ -78,6 +81,8 @@ public class PyttInPanUI : MonoBehaviour {
             winShow.SetActive(true);
 
             gameOver = true;
+
+            humanWin.SetActive(true);
         }
 
         else if (timeDown <= 0 && !gameOver)
@@ -87,6 +92,8 @@ public class PyttInPanUI : MonoBehaviour {
             winner.text = "DOG WINS";
             //winShow.
             gameOver = true;
+
+            dogWin.SetActive(true);
         }
 	}
 }
