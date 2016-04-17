@@ -6,6 +6,7 @@ public class Pan : MonoBehaviour {
 	// Use this for initialization
 
     private int nrOfFoodCol;
+    CookFood cf;
 
 	void Start () {
         nrOfFoodCol = 0;
@@ -22,7 +23,8 @@ public class Pan : MonoBehaviour {
         if (col.gameObject.tag == "Food")
         {
             nrOfFoodCol++;
-            //Update UI
+            cf = col.gameObject.GetComponent<CookFood>();
+            cf.SetCookable();
         }
     }
 

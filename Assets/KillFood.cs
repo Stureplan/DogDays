@@ -19,6 +19,7 @@ public class KillFood : MonoBehaviour {
     {
         if (col.gameObject.tag == "Food")
         {
+            
             Destroy(col.gameObject, 1.0f);
         }
     }
